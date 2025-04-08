@@ -8,7 +8,7 @@ def freq_error_mesages(errors,k):
             freq_dict[error] += 1
     # sort the dictionary based upon values
 
-    freq_dict_sort = dict(sorted(freq_dict.items(), key = lambda item: (-item[1], item[0]))
+    freq_dict_sort = dict(sorted(freq_dict.items(), key = lambda item: (-item[1], item[0])))
     # we extract the top k names
     result = []
     for i in range(k):
