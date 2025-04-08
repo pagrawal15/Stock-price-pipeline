@@ -12,7 +12,7 @@ def freq_error_messages(errors,k):
     # we extract the top k names
     result = []
     for i in range(k):
-        result.append(sorted_errors[i][0])
+        result.append(freq_dict_sort[i][0])
     return result
 
 #  test cases
