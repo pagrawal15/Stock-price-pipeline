@@ -1,4 +1,4 @@
-def freq_error_mesages(errors,k):
+def freq_error_messages(errors,k):
     freq_dict ={}
 
     for error in errors:
