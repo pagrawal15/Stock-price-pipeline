@@ -1,4 +1,4 @@
-def non_repeat_event(event):
+def non_repeat_event(events):
     freq = {}
 
     for i in events:
@@ -9,13 +9,13 @@ def non_repeat_event(event):
     
     for  e in events:
         if freq[e] == 1:
-            return key
+            return e
     
     return 'NO Unique Value'
 
 
 #  Test cases
 
-if __name__ = "__main__":
+if __name__ == "__main__":
     print(non_repeat_event(["click", "scroll", "click", "zoom", "scroll", "hover"]))  # zoom
     print(non_repeat_event(["a", "b", "a", "b"]))  # NO_UNIQUE
