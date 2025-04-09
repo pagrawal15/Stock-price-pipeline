@@ -1,7 +1,19 @@
 def count_users(emails):
-    domain = emails.split('@')
-    reurn domain
+    
+    domain = []
+    for e in emails:
+        s = e.split("@")
+        domain.append(s[-1])
+    
+    freq_dict = {}
 
+    for d in domain:
+        if d not in freq_dict:
+            freq_dict[d] = 1
+        else:
+            freq_dict[d] += 1
+   
+    return freq_dict
 
 # Test. cases
 
