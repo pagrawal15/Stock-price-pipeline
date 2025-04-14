@@ -25,3 +25,4 @@ if __name__ == "__main__":
     "dave@openai.com",
     "eve@amazon.com"
 ]
+print(count_users(emails))
